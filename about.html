@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About BMW | BMW World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body { background:#10080c; color:#f5eee9; }
+
+        .about-hero {
+            min-height:480px;
+            display:flex;
+            align-items:center;
+            text-align:center;
+            background:
+                linear-gradient(rgba(20,5,12,.75),rgba(20,5,12,.9)),
+                url("https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1800&q=85") center/cover;
+        }
+
+        .about-hero h1 {
+            font-size:clamp(40px,7vw,75px);
+            font-weight:800;
+            color:#d5b16a;
+            letter-spacing:4px;
+        }
+
+        .about-hero p {
+            font-size:18px;
+            color:#eee1d5;
+        }
+
+        .section-heading {
+            color:#d5b16a;
+            font-weight:800;
+            margin-bottom:20px;
+        }
+
+        .about-text {
+            color:#c7b9bd;
+            line-height:1.9;
+        }
+
+        .about-image {
+            width:100%;
+            height:350px;
+            object-fit:cover;
+            border-radius:12px;
+            border:1px solid #59303b;
+        }
+
+        .feature-card {
+            background:#1c1015;
+            border:1px solid #49303a;
+            border-radius:12px;
+            padding:30px;
+            height:100%;
+            transition:.3s;
+        }
+
+        .feature-card:hover {
+            transform:translateY(-6px);
+            border-color:#c9a45c;
+        }
+
+        .feature-icon {
+            font-size:38px;
+            color:#d5b16a;
+            margin-bottom:15px;
+        }
+
+        .feature-card h4 { color:#d5b16a; }
+        .feature-card p { color:#c7b9bd; line-height:1.8; }
+
+        .history-section {
+            background:linear-gradient(120deg,#210710,#310c19);
+        }
+
+        .history-number {
+            color:#d5b16a;
+            font-size:35px;
+            font-weight:800;
+        }
+
+        .history-card {
+            border-left:2px solid #c9a45c;
+            padding-left:20px;
+            height:100%;
+        }
+
+        .closing-section {
+            background:#1c1015;
+            text-align:center;
+            padding:75px 20px;
+        }
+
+        .closing-section h2 {
+            color:#d5b16a;
+            font-weight:800;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#210710;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html" style="color:#d5b16a;">BMW WORLD</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="about-hero">
+    <div class="container">
+        <h1>ABOUT BMW</h1>
+        <p>Engineering excellence. Timeless design. The joy of driving.</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+            <h2 class="section-heading">THE BMW STORY</h2>
+            <p class="about-text">
+                Bayerische Motoren Werke, widely known as BMW, is a German
+                automobile and motorcycle manufacturer known for its
+                engineering, premium design and driving performance.
+            </p>
+            <p class="about-text">
+                Founded in 1916, BMW developed from an engineering company
+                into one of the world's recognised premium automotive brands.
+                Its vehicles combine technology, comfort, innovation and
+                performance.
+            </p>
+            <p class="about-text">
+                From elegant sedans and versatile SUVs to high-performance
+                M models and fully electric vehicles, BMW continues to
+                develop different ways to experience driving.
+            </p>
+        </div>
+
+        <div class="col-lg-6">
+            <img class="about-image"
+                 src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85"
+                 alt="BMW automobile">
+        </div>
+    </div>
+</section>
+
+<section class="history-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading">A JOURNEY THROUGH TIME</h2>
+            <p class="about-text">Some important milestones in BMW's history.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="history-card">
+                    <div class="history-number">1916</div>
+                    <h5>Foundation</h5>
+                    <p class="about-text">BMW's origins date back to 1916 in Germany.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="history-card">
+                    <div class="history-number">1923</div>
+                    <h5>Motorcycles</h5>
+                    <p class="about-text">BMW introduced its first production motorcycle, the R 32.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="history-card">
+                    <div class="history-number">1972</div>
+                    <h5>BMW M</h5>
+                    <p class="about-text">BMW Motorsport GmbH was established.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="history-card">
+                    <div class="history-number">Today</div>
+                    <h5>Electric Future</h5>
+                    <p class="about-text">BMW continues to develop electric mobility and new technologies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="section-heading">WHAT DEFINES BMW</h2>
+        <p class="about-text">The values behind the driving experience.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="feature-card">
+                <div class="feature-icon">✦</div>
+                <h4>Performance</h4>
+                <p>Designed to deliver responsive handling, powerful performance and an engaging driving experience.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card">
+                <div class="feature-icon">◇</div>
+                <h4>Innovation</h4>
+                <p>Advanced technology, digital features and engineering innovation shape BMW vehicles.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h4>Electric Mobility</h4>
+                <p>BMW's electric vehicle range represents its continuing development of modern mobility.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="closing-section">
+    <div class="container">
+        <h2>THE JOY OF DRIVING</h2>
+        <p class="about-text mt-3">
+            Discover the world of BMW, where engineering meets emotion.
+        </p>
+        <a href="models.html" class="btn mt-3"
+           style="background:#c9a45c;color:#210710;font-weight:700;padding:12px 28px;">
+            EXPLORE BMW MODELS
+        </a>
+    </div>
+</section>
+
+<footer class="text-center py-4" style="background:#210710;color:#c9a45c;">
+    BMW WORLD | THE ART OF DRIVING
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
